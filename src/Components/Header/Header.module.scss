@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__texto{
+            color: #213E26;
+        }
+    };
+
+    &__lista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+
+        &__item{
+            list-style-type: none;
+            font-weight: bolder;
+            font-size: 16px;
+        }
+    }
+}

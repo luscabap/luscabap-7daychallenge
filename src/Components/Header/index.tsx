@@ -10,13 +10,13 @@ export default function Header(){
             </div>
             <ul className={styles.container__lista}>
                 <li className={styles.container__lista__item}>Como fazer</li>
-                <li className={styles.container__lista__item}>/</li>
+                <li className={styles.container__lista__separacao}>/</li>
                 <li className={styles.container__lista__item}>Ofertas</li>
-                <li className={styles.container__lista__item}>/</li>
+                <li className={styles.container__lista__separacao}>/</li>
                 <li className={styles.container__lista__item}>Depoimentos</li>
-                <li className={styles.container__lista__item}>/</li>
+                <li className={styles.container__lista__separacao}>/</li>
                 <li className={styles.container__lista__item}>Vídeos</li>
-                <li className={styles.container__lista__item}>/</li>
+                <li className={styles.container__lista__separacao}>/</li>
                 <li className={styles.container__lista__item}>Meu carrinho</li>
             </ul>
         </header>

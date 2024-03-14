@@ -27,7 +27,20 @@
             height: 75px;
             border: none;
             outline: none;
+            text-align: left;
             width: 450px;
+            background-image: url("../../assets/icon-mail.svg");
+            background-repeat: no-repeat;
+            background-position: 16px center;
+            text-align: center;
+
+            &:hover{
+                box-shadow: 10px 10px 30px 0px #0000002e;
+            };
+
+            &:focus{
+                box-shadow: 10px 10px 30px 0px #0000002e;
+            }
         };
 
         &__button{

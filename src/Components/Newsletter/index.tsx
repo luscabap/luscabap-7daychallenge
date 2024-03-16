@@ -1,7 +1,7 @@
-import styles from './Newsletter.module.scss';
 import vaso from '../../assets/vaso.png';
 import { useEffect, useState } from 'react';
 import Modal from '../Modal';
+import * as Style from './NewsletterStyle'
 
 export default function Newsletter() {
     const [emailCadastrado, setEmailCadastrado] = useState<string>('');
@@ -23,24 +23,24 @@ export default function Newsletter() {
     }, [modalMensagem]);
 
     return (
-        <main className={styles.container}>
-            <div className={styles.container__infos}>
-                <h2 className={styles.container__infos__titulo}>Sua casa com as <br/>
-                    <strong className={styles.container__infos__titulo__plantas}>melhores plantas</strong>
+        <Style.ContainerNewsletter>
+            <Style.ContainerInfos>
+                <h2 className="containerInfos__titulo">Sua casa com as <br/>
+                    <strong className="containerInfos__titulo__planta">melhores plantas</strong>
                 </h2>
-                <p className={styles.container__infos__texto}>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
+                <p className="containerInfos__texto">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
                 <form onSubmit={assinaturaRealizada}>
-                    <input type="email" placeholder='Insira seu e-mail' className={styles.container__infos__input} required onChange={e => setEmailCadastrado(e.target.value)}/>
-                    <button className={styles.container__infos__button}>Assinar newsletter</button>
+                    <input type="email" placeholder='Insira seu e-mail' className="containerInfos__input" required onChange={e => setEmailCadastrado(e.target.value)}/>
+                    <button className="containerInfos__botao">Assinar newsletter</button>
                 </form>
                 <Modal 
                     emailCadastrado={emailCadastrado}
                     modalMensagem={modalMensagem}
                 />
-            </div>
-            <div className={styles.container__visual}>
-                <img src={vaso} alt="Vaso com uma planta verde" className={styles.container__visual__img}/>
-            </div>
-        </main>
+            </Style.ContainerInfos>
+            <Style.ContainerVisual>
+                <img src={vaso} alt="Vaso com uma planta verde" className="containerVisual__img"/>
+            </Style.ContainerVisual>
+        </Style.ContainerNewsletter>
     )
 }

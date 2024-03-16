@@ -7,7 +7,7 @@ export const Container = styled.div<ContainerProps>`
     display: ${props => props.modalMensagem === false ? 'none' : 'block'};
     transition: 1s;
 
-    p {
+    .mensagem__sucesso {
         font-size: 18px;
         margin: 2rem 0;
         padding: 1.5rem;
